@@ -8,7 +8,7 @@ function useCurrentUser() {
             const response = await axios.get("/api/auth/me");
             const data = await response.data;
 
-            return data;
+            return data.result;
         },
     });
 

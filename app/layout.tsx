@@ -7,6 +7,7 @@ import "./globals.css";
 import Provider from "./(providers)";
 import AuthProvider from "./(providers)/AuthProvider";
 import ReactQueryProvider from "./(providers)/ReactQueryProvider";
+import ToastProvider from "./(providers)/ToastProvider";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
                     <ReactQueryProvider>
                         <Provider>
                             <AuthProvider />
+                            <ToastProvider />
                             {children}
                         </Provider>
                     </ReactQueryProvider>
